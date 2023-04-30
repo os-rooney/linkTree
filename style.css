@@ -33,7 +33,7 @@ body {
   width: 100vw;
   z-index: 2;
   background-color: #000;
-  opacity: .6;
+  opacity: .5;
   position: fixed;
 }
 /* main section styles */
