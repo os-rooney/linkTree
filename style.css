@@ -94,8 +94,8 @@ h3 {
   margin-right: 1rem;
 }
 
-/* styles for small displays - mobile */
-@media only screen and (max-width: 600px) {
+/* styles for small displays - mobile - portrait*/
+@media only screen and (max-width: 600px) and (orientation: portrait){
   main {
     margin-top: 30%;
   }
@@ -116,6 +116,34 @@ h3 {
   /* social media links section */
   .links a img {
     width: 4rem;
+  }
+  .links a:not(:last-child) {
+    margin-right: .25rem;
+  }  
+}
+
+/* styles for small displays - mobile - landscape*/
+@media only screen and (max-width: 896px) and (orientation: landscape){
+  main {
+    margin-top: 5%;
+  }
+  img {
+    max-width: 8rem;
+  }
+  h1{
+    font-size: 1.425rem;
+  }
+  h3{
+    font-size: .825rem;
+    text-align: center;
+  }
+  /* intro section */
+  .intro {
+    max-width: 85vw;
+  }
+  /* social media links section */
+  .links a img {
+    width: 3rem;
   }
   .links a:not(:last-child) {
     margin-right: .25rem;
