@@ -124,9 +124,6 @@ h3 {
 
 /* styles for small displays - mobile - landscape*/
 @media only screen and (max-width: 896px) and (orientation: landscape){
-  main {
-    margin-top: 5%;
-  }
   img {
     max-width: 8rem;
   }
