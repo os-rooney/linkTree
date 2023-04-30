@@ -97,12 +97,12 @@ h3 {
 /* styles for small displays - mobile */
 @media only screen and (max-width: 600px) {
   img {
-    max-width: 8em;
+    max-width: 10rem;
   }
   h1{
-    font-size: 1.325rem;
+    font-size: 1.425rem;
   }
   h3{
-    font-size: .425rem;
+    font-size: 1rem;
   }
 }
