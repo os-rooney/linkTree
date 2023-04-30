@@ -9,14 +9,37 @@
   src: url('/assets/fonts/Merriweather.ttf') format('truetype');
 }
 body {
-  background-color: #394867;
+  /* 3C6255 */
   font-family: 'Merriweather';
   width: 100wh;
   height: 100vh;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.background{
+  position: fixed;
+  background-image: url('/assets/images/background.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+}
+.overlay-body{
+  height: 100vh;
+  width: 100vw;
+  z-index: 2;
+  background-color: #000;
+  opacity: .6;
+  position: fixed;
 }
 /* main section styles */
 main {
+  position: absolute;
+  z-index: 3;
   margin-top: 10%;
   display: flex;
   flex-direction: column;
@@ -29,10 +52,11 @@ main {
 }
 img {
   border-radius: 50%;
-  max-width: 12em;
+  max-width: 14em;
 }
 #img {
   box-shadow: .2rem .3rem 1rem #000;
+  border: 3px solid #F1F6F9;
 }
 .overlay {
   position: absolute;
@@ -52,7 +76,7 @@ img {
   opacity: 1;
 }
 .link {
-  color: white;
+  color: F1F6F9;
   font-size: 20px;
   position: absolute;
   top: 50%;
