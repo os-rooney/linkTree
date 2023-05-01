@@ -70,7 +70,7 @@ img {
   transition: .5s ease;
   background-color: #F1F6F9;
   border-radius: 50%;
-  max-width: 12em;
+  max-width: 14em;
 }
 .image:hover .overlay {
   opacity: 1;
